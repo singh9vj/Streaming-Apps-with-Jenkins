@@ -1,6 +1,6 @@
 git_url         = https://github.com/singh9vj/Streaming-Apps-with-Jenkins.git
 git_branch      = master
-project_dir     = .
+project_dir     = streamdata
 code_build      = true
 unit_test       = true
 code_coverage   = true
