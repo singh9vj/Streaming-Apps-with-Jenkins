@@ -19,7 +19,30 @@
   <scala.compactVersion>2.11</scala.compactVersion>
   <spark.version>2.2.0</spark.version>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+          <dependency.check.report.dir>${project.build.directory}</dependency.check.report.dir>
+<!--         <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> -->
+<!--         <sonar.host.url>http://localhost:9000/</sonar.host.url> -->
+	 <sonar.cobertura.reportPath>${project.basedir}/target/site/cobertura/coverage.xml</sonar.cobertura.reportPath>
+        <sonar.dependencyCheck.reportPath>${dependency.check.report.dir}/dependency-check-report.xml</sonar.dependencyCheck.reportPath>
+        <sonar.dependencyCheck.htmlReportPath>${dependency.check.report.dir}/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
 </properties>
+
+	 <distributionManagement>
+   <repository>
+     <id>central</id>
+     <name>central</name>
+     <url>http://192.168.0.37:8081/artifactory/ext-release-local</url>
+   </repository>
+	<snapshotRepository>
+          <id>snapshots</id>
+          <name>libs-snapshot-local</name>
+          <url>http://192.168.0.37:8081/artifactory/ext-snapshot-local</url>
+        </snapshotRepository>
+	
+ </distributionManagement>
+ 
 <repositories>
   <repository>
     <id>spark-packages</id>
