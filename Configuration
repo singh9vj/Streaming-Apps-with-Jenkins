@@ -4,6 +4,7 @@ project_dir     = streamdata
 code_build      = true
 unit_test       = false
 code_coverage   = false
+coverage_percentage = 80
 code_quality    = false
 code_bugscan    = false
 sonar_scan      = false
