@@ -18,3 +18,4 @@ s3_profile_name = test
 upload_path     = opstree/build/prod/
 upload_region   = us-east-1
 source_file     = *.jar
+is_java_code    = true
