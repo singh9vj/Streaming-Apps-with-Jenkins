@@ -10,7 +10,7 @@ resources:
 - repo: self
 
 pool:
-    name: Default
+    vmImage: "ubuntu-latest"
     
 steps:
 - task: Maven@3
