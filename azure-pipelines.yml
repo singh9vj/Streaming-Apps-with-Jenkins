@@ -6,7 +6,12 @@
 trigger:
 - master
 
+resources:
+- repo: self
 
+pool:
+    name: Default
+    
 steps:
 - task: Maven@3
   inputs:
