@@ -176,6 +176,42 @@
 	<name>Spring3HibernateApp</name>
 	<url>http://maven.apache.org</url> -->
 	<dependencies>
+		
+		
+		
+		
+		
+		
+		
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.1.0</version>
+    <scope>provided</scope>
+</dependency>
+
+   <dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-core_${scala.compactVersion}</artifactId>
+    <version>${spark.version}</version>
+    <scope>compile</scope>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-sql_${scala.compactVersion}</artifactId>
+    <version>${spark.version}</version>
+    <scope>compile</scope>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-mllib_${scala.compactVersion}</artifactId>
+    <version>${spark.version}</version>
+    <scope>compile</scope>
+  </dependency>
+		
+		
+		
+		
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-all</artifactId>
