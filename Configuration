@@ -17,3 +17,4 @@ owasp_scan        = true
 create_artifact   = true
 do_deployment     = true
 deployment_path   = null
+source_file       = *.jar
