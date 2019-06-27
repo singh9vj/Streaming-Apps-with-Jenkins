@@ -16,5 +16,4 @@ snyk_token_name   = synck-token
 owasp_scan        = true
 create_artifact   = true
 do_deployment     = true
-source_file       = Spring3HibernateApp.war
 deployment_path   = null
